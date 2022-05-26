@@ -1,10 +1,11 @@
+//file simply run by command "node corona.js " in command prompt
 const request = require("request");
 const cheerio=require("cheerio");
 const chalk=require('chalk');
-console.log("before");
+// console.log("before");
 request('https://www.worldometers.info/coronavirus', cb);
 
-console.log("after");
+// console.log("after");
 function cb(error, response, html) {
     if(error){
         console.error('error:', error);
